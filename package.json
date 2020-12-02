@@ -1,8 +1,10 @@
 {
   "name": "typescript-boilerplate",
   "version": "0.0.1",
-  "private": true,
+  "main": "main.ts",
+  "type": "module",
   "scripts": {
+    "main": "node --no-warnings=ExperimentalWarning --loader ts-node/esm.mjs main.ts",
     "dev": "nollup --environment NODE_ENV:development -c -w",
     "dev-build": "rollup --environment NODE_ENV:development -c",
     "build": "rollup --environment NODE_ENV:production -c",
@@ -38,7 +40,12 @@
     "rollup-plugin-postcss": "^3.1.8",
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-visualizer": "^4.2.0",
+    "ts-node": "^9.0.0",
     "tslib": "^2.0.3",
     "typescript": "~4.1.2"
+  },
+  "dependencies": {
+    "@octokit/graphql": "^4.5.8",
+    "dotenv": "^8.2.0"
   }
 }
