@@ -7,8 +7,10 @@
 Create `.env` file in the project root with API credentials.
 
 ```sh
-GH_ACCESS_TOKEN="ea69ea69ea69ea69ea69ea69ea69ea69ea69ea69"
+GH_ACCESS_TOKEN="abcdefghijklmnopqrstuvwxyz0123456789abcd"
 ```
+
+> Get your access token [here](https://github.com/settings/tokens).
 
 ## Command
 
