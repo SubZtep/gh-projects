@@ -19,5 +19,5 @@ GH_ACCESS_TOKEN="abcdefghijklmnopqrstuvwxyz0123456789abcd"
 Print some info of user repositories to the console in _Markdown_ syntax for the profile page.
 
 ```sh
-$ npm run md-projects [GitHub Login]
+$ npm run md-projects [GitHub Login] > repos.md
 ```
