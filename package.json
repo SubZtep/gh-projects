@@ -1,10 +1,10 @@
 {
-  "name": "typescript-boilerplate",
+  "name": "gh-projects",
   "version": "0.0.1",
-  "main": "main.ts",
+  "main": "src/index.ts",
   "type": "module",
   "scripts": {
-    "main": "node --no-warnings=ExperimentalWarning --loader ts-node/esm.mjs main.ts",
+    "md-projects": "node --no-warnings=ExperimentalWarning --loader ts-node/esm.mjs src/md-projects.ts",
     "dev": "nollup --environment NODE_ENV:development -c -w",
     "dev-build": "rollup --environment NODE_ENV:development -c",
     "build": "rollup --environment NODE_ENV:production -c",
@@ -46,6 +46,7 @@
   },
   "dependencies": {
     "@octokit/graphql": "^4.5.8",
+    "date-fns": "^2.16.1",
     "dotenv": "^8.2.0"
   }
 }
